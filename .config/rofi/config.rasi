@@ -1,2 +1,87 @@
+configuration {
+    display-drun: " Apps:";
+    display-window: " Windows:";
+    drun-display-format: "{icon} {name}";
+    font: "JetBrainsMono Nerd Font 12";
+    show-icons: true;
+    icon-theme: "Papirus";
+}
 
-@theme "/usr/share/rofi/themes/android_notification.rasi"
+* {
+    /* E6 в кінці додає приємну легку прозорість фону */
+    bg: #1a1b26E6; 
+    bg-alt: #2b2f37;
+    fg: #e6d5c3;
+    accent: #ff9e64;
+    accent-soft: #e0af68;
+    
+    /* Робимо базовий фон прозорим, щоб працювала наша кастомна заливка */
+    background-color: transparent; 
+    text-color: @fg;
+}
+
+window {
+    width: 35%;
+    border: 2px;
+    border-color: @accent-soft; /* М'якша рамка */
+    border-radius: 8px;
+    padding: 15px;
+    background-color: @bg;
+}
+
+prompt {
+    text-color: @accent;
+    padding: 0 10px 0 0;
+    font: "JetBrainsMono Nerd Font Bold 12";
+}
+
+entry {
+    placeholder: "Шукати...";
+    placeholder-color: #414868;
+    text-color: @fg;
+}
+
+inputbar {
+    children: [prompt, entry];
+    padding: 12px;
+    background-color: @bg-alt;
+    border-radius: 6px;
+    margin: 0 0 15px 0;
+}
+
+listview {
+    columns: 1;
+    lines: 7;
+    border: 0;
+    scrollbar: false;
+}
+
+element {
+    padding: 10px;
+    border-radius: 6px;
+}
+
+element normal.normal, element alternate.normal {
+    background-color: transparent;
+    text-color: @fg;
+}
+
+/* Нове приємне виділення програми */
+element selected.normal {
+    background-color: @bg-alt;
+    text-color: @accent;
+    border: 0 0 0 3px; /* Стильна лінія зліва */
+    border-color: @accent;
+}
+
+element-text {
+    background-color: inherit;
+    text-color: inherit;
+    vertical-align: 0.5;
+}
+
+element-icon {
+    size: 24px;
+    padding: 0 15px 0 0;
+    background-color: inherit;
+}
