@@ -1,0 +1,6 @@
+2026/02/27-10:28:36.874 43e Creating DB /home/raslabsa/.config/chromium/Default/IndexedDB/https_mail.google.com_0.indexeddb.leveldb since it was missing.
+2026/02/27-10:28:36.879 43e Reusing MANIFEST /home/raslabsa/.config/chromium/Default/IndexedDB/https_mail.google.com_0.indexeddb.leveldb/MANIFEST-000001
+2026/02/27-11:05:53.133 43f Level-0 table #5: started
+2026/02/27-11:05:53.134 43f Level-0 table #5: 2079 bytes OK
+2026/02/27-11:05:53.137 43f Delete type=0 #3
+2026/02/27-11:05:53.137 43f Manual compaction at level-0 from (begin) .. (end); will stop at (end)

@@ -1,0 +1,10 @@
+2026-02-27 08:19:28.887 [info] Started local extension host with pid 29530.
+2026-02-27 08:19:28.924 [info] Started initializing default profile extensions in extensions installation folder. file:///home/raslabsa/.vscode/extensions
+2026-02-27 08:19:29.103 [info] Completed initializing default profile extensions in extensions installation folder. file:///home/raslabsa/.vscode/extensions
+2026-02-27 08:19:29.623 [info] MCP Registry configured: https://api.mcp.github.com
+2026-02-27 08:19:29.846 [info] Settings Sync: Account status changed from uninitialized to unavailable
+2026-02-27 08:19:33.518 [info] [perf] Render performance baseline is 21ms
+2026-02-27 08:20:20.903 [info] Started local extension host with pid 30980.
+2026-02-27 08:20:21.518 [info] MCP Registry configured: https://api.mcp.github.com
+2026-02-27 08:20:21.677 [info] Settings Sync: Account status changed from uninitialized to unavailable
+2026-02-27 08:20:23.516 [info] [perf] Render performance baseline is 19ms
