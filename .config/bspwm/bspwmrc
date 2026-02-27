@@ -21,5 +21,6 @@ nm-applet &
 blueman-applet &
 Bluetooth
 picom &
+setxkbmap -layout us,ua -option grp:alt_shift_toggle &
 
 $HOME/.config/polybar/launch.sh &
