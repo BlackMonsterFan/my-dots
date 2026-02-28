@@ -15,7 +15,7 @@
     (scroll :height 320 :vscroll true
       (box :orientation "v" :space-evenly false :class "wifi-list"
         (for net in wifi-json
-          ;; ТЕПЕР ТУТ ТІЛЬКИ ОДНА КОМАНДА
+          ;; 
           (button :class {net.active ? "wifi-item-active" : "wifi-item"}
                   :onclick "~/.config/eww/scripts/wifi-connect.sh '${net.ssid}' &"
             (box :space-evenly false
@@ -24,3 +24,29 @@
               (label :class "wifi-lock gray" :text {net.lock} :halign "end" :hexpand true)
               (label :class "wifi-check orange" :text {net.active ? " 󰄬" : ""})
             )))))))
+
+
+;; --- POWER MENU ---
+(defpoll batt-limit :interval "2s" "cat /sys/bus/platform/drivers/ideapad_acpi/VPC2004:00/conservation_mode")
+
+(defwindow powermenu
+  :monitor 0
+  :geometry (geometry :x "-15px" :y "45px" :width "240px" :anchor "top right")
+  :stacking "fg"
+  (box :class "power-bg" :orientation "v" :space-evenly false
+    
+    (label :class "power-title" :text "󰐥  System" :halign "center")
+    
+    (box :class "power-buttons" :orientation "h" :space-evenly true
+      (button :class "btn-power" :tooltip "Power Off" :onclick "systemctl poweroff" "󰐥")
+      (button :class "btn-reboot" :tooltip "Reboot" :onclick "systemctl reboot" "󰜉")
+    )
+    
+    (box :class "batt-box" :orientation "h" :space-evenly false :halign "center"
+      (label :class "batt-icon" :text {batt-limit == "1" ? "󰽤" : "󰁹"})
+      (button :class {batt-limit == "1" ? "btn-batt-active" : "btn-batt"}
+              :onclick "bash ~/.config/eww/scripts/battery-toggle.sh &"
+              {batt-limit == "1" ? "Limit 60%" : "Full Charge"})
+    )
+  )
+)

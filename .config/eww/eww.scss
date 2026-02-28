@@ -75,3 +75,56 @@ $font: "JetBrainsMono Nerd Font";
 .gray { color: $gray; }
 .wifi-icon { font-size: 16px; margin-right: 12px; }
 .wifi-check { font-size: 16px; margin-left: 8px; font-weight: bold; }
+
+// --- POWER MENU ---
+.power-bg {
+  background-color: $bg;
+  border: 2px solid $orange;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.power-title {
+  color: $orange;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.power-buttons {
+  margin-bottom: 16px;
+}
+
+.btn-power, .btn-reboot {
+  font-size: 32px;
+  color: $fg;
+  padding: 8px 24px;
+  border-radius: 8px;
+  transition: all 0.2s;
+}
+
+.btn-power:hover { background-color: #f7768e; color: $bg; } 
+.btn-reboot:hover { background-color: #7aa2f7; color: $bg; } 
+
+.batt-box {
+  background-color: $hover-bg;
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+
+.batt-icon {
+  color: $orange;
+  font-size: 18px;
+  margin-right: 12px;
+}
+
+.btn-batt {
+  color: $fg;
+  font-size: 13px;
+}
+
+.btn-batt-active {
+  color: $orange;
+  font-weight: bold;
+  font-size: 13px;
+}

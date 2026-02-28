@@ -1,0 +1,12 @@
+2026-02-28 04:06:36.728 [info] Extension host with pid 2318 started
+2026-02-28 04:06:36.728 [info] Skipping acquiring lock for /home/raslabsa/.config/Code/User/workspaceStorage/32d370b1f021968ab5549c0f1f2d1793.
+2026-02-28 04:06:36.996 [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onAuthenticationRequest:github'
+2026-02-28 04:06:37.026 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2026-02-28 04:06:37.100 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2026-02-28 04:06:37.128 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2026-02-28 04:06:37.193 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2026-02-28 04:06:37.333 [info] Eager extensions activated
+2026-02-28 04:06:37.340 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2026-02-28 04:06:37.342 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2026-02-28 04:06:37.361 [info] ExtensionService#_doActivateExtension monokai.theme-monokai-pro-vscode, startup: false, activationEvent: 'onStartupFinished'
+2026-02-28 04:34:12.123 [info] Extension host terminating: renderer closed the MessagePort

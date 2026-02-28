@@ -23,8 +23,8 @@ pkill -x polybar
 pkill -x eww
 
 ~/.config/polybar/launch.sh &
+eww & daemon
 
-eww daemon &
 
 Bluetooth
 picom --config ~/.config/picom/picom.conf &
@@ -32,5 +32,7 @@ setxkbmap -layout us,ua -option grp:alt_shift_toggle &
 
 eww daemon &
 eww open bar &
+
+blueman-applet &
 
 dunst &

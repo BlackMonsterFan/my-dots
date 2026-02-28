@@ -1,2 +1,3 @@
-2026/02/27-19:13:09.571 2d25 Creating DB /home/raslabsa/.config/Code/Session Storage since it was missing.
-2026/02/27-19:13:09.578 2d25 Reusing MANIFEST /home/raslabsa/.config/Code/Session Storage/MANIFEST-000001
+2026/02/28-03:09:59.844 22eb9 Reusing MANIFEST /home/raslabsa/.config/Code/Session Storage/MANIFEST-000001
+2026/02/28-03:09:59.845 22eb9 Recovering log #3
+2026/02/28-03:09:59.845 22eb9 Reusing old log /home/raslabsa/.config/Code/Session Storage/000003.log 

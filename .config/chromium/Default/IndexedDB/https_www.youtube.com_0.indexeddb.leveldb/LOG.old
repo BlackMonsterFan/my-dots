@@ -1,6 +1,12 @@
-2026/02/28-00:59:08.674 1058 Reusing MANIFEST /home/raslabsa/.config/chromium/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/MANIFEST-000001
-2026/02/28-00:59:08.675 1058 Recovering log #26
-2026/02/28-00:59:08.685 1058 Reusing old log /home/raslabsa/.config/chromium/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/000026.log 
-2026/02/28-00:59:26.533 105a Level-0 table #31: started
-2026/02/28-00:59:26.553 105a Level-0 table #31: 1352414 bytes OK
-2026/02/28-00:59:26.557 105a Delete type=0 #26
+2026/02/28-04:47:38.179 a9b Reusing MANIFEST /home/raslabsa/.config/chromium/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/MANIFEST-000001
+2026/02/28-04:47:38.179 a9b Recovering log #30
+2026/02/28-04:47:38.183 a9b Reusing old log /home/raslabsa/.config/chromium/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/000030.log 
+2026/02/28-07:40:43.601 a4e Level-0 table #36: started
+2026/02/28-07:40:43.642 a4e Level-0 table #36: 1410304 bytes OK
+2026/02/28-07:40:43.645 a4e Delete type=0 #30
+2026/02/28-08:20:51.998 a4e Compacting 1@1 + 1@2 files
+2026/02/28-08:20:52.032 a4e Generated table #37@1: 646 keys, 59724 bytes
+2026/02/28-08:20:52.032 a4e Compacted 1@1 + 1@2 files => 59724 bytes
+2026/02/28-08:20:52.034 a4e compacted to: files[ 0 0 1 0 0 0 0 ]
+2026/02/28-08:20:52.034 a4e Delete type=2 #33
+2026/02/28-08:20:52.035 a4e Delete type=2 #36
