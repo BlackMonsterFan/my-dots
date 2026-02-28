@@ -1,3 +1,5 @@
-2026/02/28-13:55:25.414 5 Reusing MANIFEST /home/raslabsa/.config/chromium/Default/Local Storage/leveldb/MANIFEST-000001
-2026/02/28-13:55:25.420 5 Recovering log #79
-2026/02/28-13:55:25.421 5 Reusing old log /home/raslabsa/.config/chromium/Default/Local Storage/leveldb/000079.log 
+2026/02/28-17:38:46.726 5 Reusing MANIFEST /home/raslabsa/.config/chromium/Default/Local Storage/leveldb/MANIFEST-000001
+2026/02/28-17:38:46.731 5 Recovering log #118
+2026/02/28-17:38:46.731 5 Level-0 table #121: started
+2026/02/28-17:38:46.735 5 Level-0 table #121: 20756 bytes OK
+2026/02/28-17:38:46.740 5 Delete type=0 #118

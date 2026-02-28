@@ -19,6 +19,13 @@ bspc rule -a Screenkey manage=off
 
 # --- AUTOSTART ---
 
+# Статичні шпалери за замовчуванням
+feh --bg-fill ~/Wallpapers/static/test.jpg &
+
+# Запуск композитора
+pkill picom
+picom -b &
+
 pkill -x polybar
 pkill -x eww
 
@@ -27,7 +34,6 @@ eww & daemon
 
 
 Bluetooth
-picom --config ~/.config/picom/picom.conf &
 setxkbmap -layout us,ua -option grp:alt_shift_toggle &
 
 eww daemon &
@@ -36,3 +42,5 @@ eww open bar &
 blueman-applet &
 
 dunst &
+
+~/.config/bspwm/scripts/wall_toggle.sh &

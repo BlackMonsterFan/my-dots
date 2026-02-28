@@ -1754,6 +1754,11 @@
             "Z370 AORUS Ultra Gaming-CF"
         ]
     },
+    "LogManager": {
+        "dialog_no_show_hashes": [
+            1994918717196657649
+        ]
+    },
     "UserInterface": {
         "autoload_profiles": {
             "exit_profile": {

@@ -1,3 +1,6 @@
+(defpoll battery_status :interval "2s"
+  "sudo /home/raslabsa/.config/eww/scripts/battery-logic.sh get")
+
 (defpoll wifi-json :interval "5s" "bash ~/.config/eww/scripts/wifi.sh")
 
 (defwindow wifi-pop
@@ -44,9 +47,8 @@
     
     (box :class "batt-box" :orientation "h" :space-evenly false :halign "center"
       (label :class "batt-icon" :text {batt-limit == "1" ? "󰽤" : "󰁹"})
-      (button :class {batt-limit == "1" ? "btn-batt-active" : "btn-batt"}
-              :onclick "bash ~/.config/eww/scripts/battery-toggle.sh &"
-              {batt-limit == "1" ? "Limit 60%" : "Full Charge"})
+      (button :onclick "sudo /home/raslabsa/.config/eww/scripts/battery-logic.sh toggle"
+      (label :text {battery_status == "1" ? "Save mode (60%)" : "Full mode (100%)"}))
     )
   )
 )
