@@ -1,0 +1,51 @@
+* {
+    bg: #1a1b26;
+    fg: #e6d5c3;
+    accent: #ff9e64;
+    select: #414868;
+}
+
+window {
+    width: 280px;
+    location: northeast; /* Верхній правий кут */
+    anchor: northeast;
+    x-offset: -15px;
+    y-offset: 45px;
+    border: 2px;
+    border-color: @accent;
+    border-radius: 10px;
+    background-color: @bg;
+}
+
+listview {
+    fixed-height: false;
+    dynamic: true;
+    scrollbar: false;
+    lines: 10;
+    padding: 8px;
+    background-color: transparent;
+}
+
+element {
+    padding: 5px 10px;
+    background-color: transparent;
+    text-color: @fg;
+}
+
+/* При наведенні */
+element selected.normal {
+    background-color: @select;
+    text-color: @accent;
+}
+
+/* АКТИВНА МЕРЕЖА (Тільки помаранчевий текст) */
+element active {
+    background-color: transparent;
+    text-color: @accent;
+}
+
+/* Якщо навели на активну мережу — залишаємо фон темним */
+element selected.active {
+    background-color: @select;
+    text-color: @accent;
+}

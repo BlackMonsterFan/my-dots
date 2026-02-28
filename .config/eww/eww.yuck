@@ -1,0 +1,26 @@
+(defpoll wifi-json :interval "5s" "bash ~/.config/eww/scripts/wifi.sh")
+
+(defwindow wifi-pop
+  :monitor 0
+  :geometry (geometry :x "-15px" :y "45px" :width "320px" :anchor "top right")
+  :stacking "fg"
+  (box :class "wifi-window" :orientation "v" :space-evenly false
+    
+    (box :class "wifi-header" :space-evenly false :halign "fill"
+      (label :class "wifi-title" :text "󰤨  Wi-Fi Мережі" :halign "start" :hexpand true)
+      (button :class "scan-btn" 
+              :onclick "nmcli dev wifi rescan & notify-send 'Wi-Fi' 'Шукаю нові мережі...' &" 
+              :tooltip "Сканувати ефір" "󰑐"))
+    
+    (scroll :height 320 :vscroll true
+      (box :orientation "v" :space-evenly false :class "wifi-list"
+        (for net in wifi-json
+          ;; ТЕПЕР ТУТ ТІЛЬКИ ОДНА КОМАНДА
+          (button :class {net.active ? "wifi-item-active" : "wifi-item"}
+                  :onclick "~/.config/eww/scripts/wifi-connect.sh '${net.ssid}' &"
+            (box :space-evenly false
+              (label :class "wifi-icon orange" :text {net.sig})
+              (label :class "wifi-ssid" :text {net.ssid} :limit-width 18)
+              (label :class "wifi-lock gray" :text {net.lock} :halign "end" :hexpand true)
+              (label :class "wifi-check orange" :text {net.active ? " 󰄬" : ""})
+            )))))))

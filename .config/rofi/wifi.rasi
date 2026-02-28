@@ -1,0 +1,77 @@
+* {
+    /* Кольори */
+    bg: #1a1b26d9;        /* Основний фон (напівпрозорий) */
+    bg-alt: #24283b;      /* Фон рядка пошуку */
+    bg-selected: #15161e; /* Темніший фон для вибраної мережі */
+    fg: #e6d5c3;          /* Основний текст */
+    accent: #ff9e64;      /* Твій помаранчевий акцент */
+    
+    background-color: transparent;
+    text-color: @fg;
+    font: "monospace 11";
+}
+
+window {
+    width: 370px;
+    background-color: @bg;
+
+    border: 1px;
+    border-color: @accent;
+    border-radius: 10px;
+    padding: 12px;
+    
+    location: north east;
+    y-offset: 50px;
+    x-offset: -20px;
+}
+
+mainbox {
+    children: [ inputbar, listview ];
+    spacing: 15px;
+}
+
+inputbar {
+    background-color: @bg-alt;
+    children: [ prompt, entry ];
+    border-radius: 5px;
+    padding: 10px;
+}
+
+prompt {
+    text-color: @accent;
+    font: "monospace bold 11";
+    margin: 0px 10px 0px 0px;
+}
+
+entry {
+    placeholder: "Пошук мережі...";
+    placeholder-color: #565f89;
+}
+
+listview {
+    lines: 6;
+    spacing: 5px;
+    scrollbar: false;
+}
+
+element {
+    padding: 8px 10px;
+    border-radius: 5px;
+}
+
+/* Оновлений стиль вибраного елемента */
+element selected {
+    background-color: @bg-selected; /* Фон стає темнішим */
+    text-color: @accent;            /* Текст та іконка стають помаранчевими */
+}
+
+/* --- Стиль для поточної підключеної мережі --- */
+element active {
+    text-color: @accent; /* Робить текст підключеної мережі помаранчевим */
+}
+
+/* --- Коли ти наводиш курсор на підключену мережу --- */
+element selected active {
+    background-color: @bg-selected;
+    text-color: @accent;
+}

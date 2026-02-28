@@ -1,5 +1,6 @@
-2026/02/27-09:04:38.658 653 Reusing MANIFEST /home/raslabsa/.config/chromium/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/MANIFEST-000001
-2026/02/27-09:04:38.658 653 Recovering log #18
-2026/02/27-09:04:38.659 653 Reusing old log /home/raslabsa/.config/chromium/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/000018.log 
-2026/02/27-09:04:38.659 653 Delete type=2 #17
-2026/02/27-09:04:38.660 653 Delete type=2 #19
+2026/02/28-00:59:08.674 1058 Reusing MANIFEST /home/raslabsa/.config/chromium/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/MANIFEST-000001
+2026/02/28-00:59:08.675 1058 Recovering log #26
+2026/02/28-00:59:08.685 1058 Reusing old log /home/raslabsa/.config/chromium/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/000026.log 
+2026/02/28-00:59:26.533 105a Level-0 table #31: started
+2026/02/28-00:59:26.553 105a Level-0 table #31: 1352414 bytes OK
+2026/02/28-00:59:26.557 105a Delete type=0 #26

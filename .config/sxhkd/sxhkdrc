@@ -2,6 +2,10 @@
 # wm independent hotkeys
 #
 
+# Перемикач анімованих та статичних шпалер
+super + w
+    ~/.config/bspwm/wall-toggle.sh
+
 # terminal emulator
 super + Return
 	alacritty

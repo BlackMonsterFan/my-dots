@@ -1,0 +1,40 @@
+[global]
+    # РОЗТАШУВАННЯ: Знизу справа, 20 пікселів відступ
+    width = 300
+    height = 150
+    origin = bottom-right
+    offset = 20x20
+
+    # Візуал
+    corner_radius = 10
+    frame_width = 2
+    separator_color = frame
+    font = JetBrainsMono Nerd Font 10
+    
+    # Відступи всередині (щоб текст дихав)
+    padding = 12
+    horizontal_padding = 15
+
+    # Поведінка
+    format = "<b>%s</b>\n%b"
+    word_wrap = yes
+    ignore_newline = no
+    timeout = 3
+
+[urgency_low]
+    background = "#1a1b26"
+    foreground = "#e6d5c3"
+    frame_color = "#414868"
+    timeout = 2
+
+[urgency_normal]
+    background = "#1a1b26"
+    foreground = "#e6d5c3"
+    frame_color = "#ff9e64"
+    timeout = 3
+
+[urgency_critical]
+    background = "#1a1b26"
+    foreground = "#e6d5c3"
+    frame_color = "#f7768e"
+    timeout = 5

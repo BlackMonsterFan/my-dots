@@ -1,0 +1,4 @@
+2026-02-28 03:22:52.457 [info] Started local extension host with pid 14552.
+2026-02-28 03:22:53.681 [info] MCP Registry configured: https://api.mcp.github.com
+2026-02-28 03:22:53.739 [info] Settings Sync: Account status changed from uninitialized to unavailable
+2026-02-28 03:22:57.051 [info] [perf] Render performance baseline is 20ms

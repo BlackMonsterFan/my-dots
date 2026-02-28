@@ -1,0 +1,77 @@
+// --- ТВОЯ ПАЛІТРА ---
+$bg: #1a1b26;
+$fg: #e6d5c3;
+$orange: #ff9e64;
+$hover-bg: #414868;
+$gray: #565f89;
+$font: "JetBrainsMono Nerd Font";
+
+* { all: unset; font-family: $font; }
+
+// --- СТИЛІ ВІКНА ---
+.wifi-window {
+  background-color: $bg;
+  border: 2px solid $orange;
+  border-radius: 12px;
+  padding: 12px;
+}
+
+// --- ШАПКА ---
+.wifi-header {
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid $hover-bg;
+}
+
+.wifi-title {
+  color: $orange;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.scan-btn {
+  color: $fg;
+  font-size: 16px;
+  padding: 4px 8px;
+  border-radius: 6px;
+  transition: all 0.2s;
+  &:hover {
+    background-color: $hover-bg;
+    color: $orange;
+  }
+}
+
+// --- СПИСОК МЕРЕЖ ---
+.wifi-list {
+  padding-right: 5px; // місце для скролу
+}
+
+.wifi-item {
+  padding: 8px 10px;
+  margin-bottom: 4px;
+  border-radius: 8px;
+  color: $fg;
+  transition: all 0.2s;
+  
+  &:hover {
+    background-color: $hover-bg;
+  }
+}
+
+// Стиль для підключеної мережі
+.wifi-item-active {
+  @extend .wifi-item;
+  background-color: transparent;
+  border: 1px solid $orange;
+  
+  .wifi-ssid {
+    color: $orange;
+    font-weight: bold;
+  }
+}
+
+// --- ТЕКСТИ ТА ІКОНКИ ---
+.orange { color: $orange; }
+.gray { color: $gray; }
+.wifi-icon { font-size: 16px; margin-right: 12px; }
+.wifi-check { font-size: 16px; margin-left: 8px; font-weight: bold; }

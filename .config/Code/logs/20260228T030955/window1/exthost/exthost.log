@@ -1,0 +1,22 @@
+2026-02-28 03:09:58.803 [info] Extension host with pid 143401 started
+2026-02-28 03:09:58.803 [info] Skipping acquiring lock for /home/raslabsa/.config/Code/User/workspaceStorage/32d370b1f021968ab5549c0f1f2d1793.
+2026-02-28 03:09:58.907 [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onAuthenticationRequest:github'
+2026-02-28 03:09:58.937 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2026-02-28 03:09:59.017 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2026-02-28 03:09:59.030 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2026-02-28 03:09:59.085 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2026-02-28 03:09:59.228 [info] Eager extensions activated
+2026-02-28 03:09:59.236 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2026-02-28 03:09:59.240 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2026-02-28 03:09:59.257 [info] ExtensionService#_doActivateExtension monokai.theme-monokai-pro-vscode, startup: false, activationEvent: 'onStartupFinished'
+2026-02-28 03:09:59.815 [info] Extension host terminating: renderer closed the MessagePort
+2026-02-28 03:09:59.908 [error] ProxyResolver#resolveProxy undefined Canceled: Canceled
+	at new rU (file:///opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:29:120928)
+	at LE.U (file:///opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:29:125538)
+	at r.<computed>.n.charCodeAt.r.<computed> (file:///opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:29:123032)
+	at lA.resolveProxy (file:///opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:113:79520)
+	at Object.resolveProxy (file:///opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:215:23831)
+	at useProxySettings (/opt/visual-studio-code/resources/app/node_modules/@vscode/proxy-agent/out/index.js:208:16)
+	at /opt/visual-studio-code/resources/app/node_modules/@vscode/proxy-agent/out/index.js:145:13
+	at /opt/visual-studio-code/resources/app/node_modules/@vscode/proxy-agent/out/index.js:791:13 
+2026-02-28 03:09:59.908 [info] Extension host with pid 143401 exiting with code 0

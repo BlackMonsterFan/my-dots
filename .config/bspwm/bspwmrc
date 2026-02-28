@@ -17,10 +17,20 @@ bspc rule -a mplayer2 state=floating
 bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
 
-nm-applet &
-blueman-applet &
+# --- AUTOSTART ---
+
+pkill -x polybar
+pkill -x eww
+
+~/.config/polybar/launch.sh &
+
+eww daemon &
+
 Bluetooth
-picom &
+picom --config ~/.config/picom/picom.conf &
 setxkbmap -layout us,ua -option grp:alt_shift_toggle &
 
-$HOME/.config/polybar/launch.sh &
+eww daemon &
+eww open bar &
+
+dunst &

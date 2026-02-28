@@ -1,6 +1,3 @@
-2026/02/27-09:42:03.938 5 Reusing MANIFEST /home/raslabsa/.config/chromium/Default/Session Storage/MANIFEST-000001
-2026/02/27-09:42:03.939 5 Recovering log #3
-2026/02/27-09:42:03.940 5 Reusing old log /home/raslabsa/.config/chromium/Default/Session Storage/000003.log 
-2026/02/27-11:23:39.525 7 Level-0 table #5: started
-2026/02/27-11:23:39.531 7 Level-0 table #5: 23741 bytes OK
-2026/02/27-11:23:39.534 7 Delete type=0 #3
+2026/02/28-03:29:13.179 5 Reusing MANIFEST /home/raslabsa/.config/chromium/Default/Session Storage/MANIFEST-000001
+2026/02/28-03:29:13.180 5 Recovering log #18
+2026/02/28-03:29:13.182 5 Reusing old log /home/raslabsa/.config/chromium/Default/Session Storage/000018.log 

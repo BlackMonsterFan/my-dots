@@ -1,7 +1,7 @@
 {
     "telemetry.sqmId": "",
     "telemetry.machineId": "623a8119e29bf3a8899b8a128d3d34587e2dee3e0a8cda360744f81d16b3b192",
-    "telemetry.devDeviceId": "3296f18b-19d3-428a-9f25-f1ed6d473fd7",
+    "telemetry.devDeviceId": "3a7c97ec-ed34-4860-b36f-19d2ac573dda",
     "backupWorkspaces": {
         "workspaces": [],
         "folders": [
@@ -34,23 +34,23 @@
         "openedWindows": []
     },
     "theme": "vs-dark",
-    "themeBackground": "#1f1f1f",
+    "themeBackground": "#222222",
     "windowSplash": {
         "zoomLevel": 0,
         "baseTheme": "vs-dark",
         "colorInfo": {
-            "foreground": "#cccccc",
-            "background": "#1f1f1f",
-            "editorBackground": "#1f1f1f",
-            "titleBarBackground": "#181818",
-            "titleBarBorder": "#2b2b2b",
-            "activityBarBackground": "#181818",
-            "activityBarBorder": "#2b2b2b",
-            "sideBarBackground": "#181818",
-            "sideBarBorder": "#2b2b2b",
-            "statusBarBackground": "#181818",
-            "statusBarBorder": "#2b2b2b",
-            "statusBarNoFolderBackground": "#1f1f1f"
+            "foreground": "#f7f1ff",
+            "background": "#222222",
+            "editorBackground": "#222222",
+            "titleBarBackground": "#191919",
+            "titleBarBorder": "#131313",
+            "activityBarBackground": "#131313",
+            "activityBarBorder": "#131313",
+            "sideBarBackground": "#191919",
+            "sideBarBorder": "#131313",
+            "statusBarBackground": "#191919",
+            "statusBarBorder": "#131313",
+            "statusBarNoFolderBackground": "#191919"
         },
         "layoutInfo": {
             "sideBarSide": "left",
